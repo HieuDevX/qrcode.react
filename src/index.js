@@ -60,14 +60,17 @@ const DEFAULT_PROPS = {
   includeMargin: false,
 };
 
-const PROP_TYPES = process.env.NODE_ENV !== 'production' ? {
-  value: PropTypes.string.isRequired,
-  size: PropTypes.number,
-  level: PropTypes.oneOf(['L', 'M', 'Q', 'H']),
-  bgColor: PropTypes.string,
-  fgColor: PropTypes.string,
-  includeMargin: PropTypes.bool,
-} : {};
+const PROP_TYPES =
+  process.env.NODE_ENV !== 'production'
+    ? {
+        value: PropTypes.string.isRequired,
+        size: PropTypes.number,
+        level: PropTypes.oneOf(['L', 'M', 'Q', 'H']),
+        bgColor: PropTypes.string,
+        fgColor: PropTypes.string,
+        includeMargin: PropTypes.bool,
+      }
+    : {};
 
 const MARGIN_SIZE = 4;
 
@@ -170,7 +173,8 @@ class QRCodeCanvas extends React.PureComponent<QRProps> {
       // matches the number of cells. This avoids rounding issues, but does
       // result in some potentially unwanted single pixel issues between
       // blocks, only in environments that don't support Path2D.
-      const pixelRatio = window.devicePixelRatio || 1;
+      // const pixelRatio = window.devicePixelRatio || 1;
+      const pixelRatio = 1;
       canvas.height = canvas.width = size * pixelRatio;
       const scale = (size / numCells) * pixelRatio;
       ctx.scale(scale, scale);
