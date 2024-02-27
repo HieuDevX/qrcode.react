@@ -30,7 +30,9 @@
   "dependencies": {
     "loose-envify": "^1.4.0",
     "prop-types": "^15.6.0",
-    "qr.js": "0.0.0"
+    "qr.js": "0.0.0",
+    "tea-math": "^1.1.1",
+    "tea-sum": "^1.1.2"
   },
   "peerDependencies": {
     "react": "^15.5.3 || ^16.0.0"
