@@ -1,6 +1,6 @@
 {
   "name": "qrcode.react-hieuht",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component to generate QR codes",
   "keywords": [
     "react",
@@ -21,7 +21,7 @@
   "author": "Paul O’Shannessy <paul@oshannessy.com> - customized by hieuht",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HieuDevX/qrcode.react.git"
+    "url": "https://github.com/hieu-ht/qrcode.react.git"
   },
   "license": "ISC",
   "files": [
